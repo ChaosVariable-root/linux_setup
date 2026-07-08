@@ -19,6 +19,7 @@ sway_setup_manifest:
     - bluez
     - network-manager
     - brightnessctl
+    - chromium
 
   files:
     "sway/config":
@@ -79,6 +80,7 @@ sway_setup_manifest:
         - ~/.local/share/applications/firefox-firefoxGPT.desktop
         - ~/.local/share/applications/firefox-General.desktop
         - ~/.local/share/applications/firefox-gpt5.desktop
+        - ~/.local/share/applications/chromium-chatgpt.desktop
         - ~/.local/share/applications/discord.desktop
         - ~/.local/share/applications/telegram.desktop
         - ~/.local/share/applications/whatsapp.desktop
