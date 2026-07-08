@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ChatGPT Chromium
+Comment=ChatGPT w osobnym profilu Chromium
+Exec=sh -lc 'exec chromium --user-data-dir="$HOME/.config/chromium-chatgpt" --class=ChromiumChatGPT --new-window https://chatgpt.com/'
+Icon=chromium
+Terminal=false
+Categories=Network;WebBrowser;
+StartupWMClass=ChromiumChatGPT

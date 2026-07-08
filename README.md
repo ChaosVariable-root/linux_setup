@@ -18,7 +18,7 @@ Celem było pozbycie się ciężkich środowisk (GNOME) i skonfigurowanie lekkie
 * `waybar/` → `config.jsonc`, `style.css`, skrypty (`brightness-menu.sh`, `audio-menu.sh`, `wifi-menu.sh`, `power-menu.sh`)
 * `wofi/` → `config` + `style.css`
 * `foot/` → `foot.ini` (kolory terminala)
-* `desktop-files/` → własne launchery `.desktop` (Firefox profiles, Discord, Telegram, WhatsApp)
+* `desktop-files/` → własne launchery `.desktop` (Firefox profiles, ChatGPT Chromium, Discord, Telegram, WhatsApp)
 
 ## Najważniejsze ustawienia i architektura
 
@@ -53,3 +53,9 @@ Szczegółowy opis wszystkich zainstalowanych paczek, wersji plików konfiguracy
 * Użyteczny, minimalistyczny desktop na Debianie 13.
 * Dokumentacja procesu dla osób przechodzących z ciężkich środowisk na Sway i architekturę PipeWire/WirePlumber.
 * Publiczny przykład pełnego setupu opartego na konfiguracji skryptowej z pominięciem błędów warstwy sprzętowej jądra.
+
+## ChatGPT w Chromium
+
+Dla ChatGPT dostępny jest osobny launcher Chromium z odseparowanym katalogiem profilu użytkownika. Pozwala to trzymać sesję ChatGPT poza głównym profilem przeglądarki bez publikowania lokalnych szczegółów konfiguracji systemu.
+
+Launcher znajduje się w `desktop-files/chromium-chatgpt.desktop` i powinien trafić do `~/.local/share/applications/chromium-chatgpt.desktop`. Po instalacji pojawia się w Wofi jako `ChatGPT Chromium`.
