@@ -20,10 +20,10 @@ input * {
 }
 
 input type:touchpad {
-    tap enabled
+    tap disabled
     natural_scroll enabled
     dwt enabled
-    click_method clickfinger
+    click_method none
 }
 
 ### Key bindings
@@ -115,14 +115,15 @@ bindsym $mod+r mode "resize"
 
 ### Utilities
 # Audio
-bindsym --locked XF86AudioMute         exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym --locked XF86AudioLowerVolume  exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym --locked XF86AudioRaiseVolume  exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioMicMute      exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym --locked XF86AudioMute         exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume  exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym --locked XF86AudioRaiseVolume  exec wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+
+bindsym --locked XF86AudioMicMute      exec wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 # Brightness
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp   exec brightnessctl set 5%+
 # Screenshot
+bindsym Print exec grim ~/Obrazy/screenshot-$(date +%F_%H-%M-%S).png
 
 ### Waybar
 exec waybar
