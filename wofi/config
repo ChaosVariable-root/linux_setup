@@ -1,2 +1,16 @@
-drun-path=/usr/share/applications:/home/brudna_hara/.local/share/applications
+show=drun
+term=foot
+prompt=> 
+insensitive=true
+matching=fuzzy
+no-actions=true
+allow-markup=true
+allow-images=false
+hide-scroll=true
+location=center
+width=520
+height=360
+lines=10
 
+# Twoje ścieżki do .desktop
+drun-path=/usr/share/applications:/home/brudna_hara/.local/share/applications
