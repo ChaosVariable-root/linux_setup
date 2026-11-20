@@ -1,0 +1,28 @@
+# Pastelini theme for micro
+# Paleta:
+# background: #241B2A
+# active:     #d58ab3
+# inactive:   #88d8b0
+# text:       #A7A2A8
+
+color-link default "#A7A2A8"      # tekst
+color-link background "#241B2A"   # tło
+
+color-link keyword "#d58ab3"      # np. słowa kluczowe
+color-link type "#88d8b0"         # np. typy danych
+color-link string "#d58ab3"
+color-link number "#88d8b0"
+
+color-link constant "#d58ab3"
+color-link identifier "#A7A2A8"
+color-link statement "#d58ab3"
+color-link comment "#88d8b0"
+
+color-link statusline "#241B2A"
+color-link statusline-fg "#A7A2A8"
+color-link statusline-info "#88d8b0"
+color-link statusline-warning "#d58ab3"
+color-link statusline-error "#d58ab3"
+
+color-link cursor "#d58ab3"
+color-link selection "#88d8b0"
