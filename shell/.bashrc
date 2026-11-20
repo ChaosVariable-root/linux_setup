@@ -112,4 +112,10 @@ if ! shopt -oq posix; then
   fi
 fi
 export PATH="$HOME/.npm-global/bin:$PATH"
-PATH=/home/brudna_hara/.local/bin:/home/brudna_hara/.npm-global/bin:/home/brudna_hara/.npm-global/bin:/home/brudna_hara/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/brudna_hara/.lmstudio/bin:/home/brudna_hara/.antigravity/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts
+
+# debugpy z rozszerzenia Antigravity. Wzorzec zamiast numeru wersji i
+# sprawdzenie katalogu, żeby przetrwało aktualizację i reinstalację.
+for _d in "$HOME"/.antigravity/extensions/ms-python.debugpy-*/bundled/scripts/noConfigScripts; do
+    [ -d "$_d" ] && PATH="$PATH:$_d"
+done
+unset _d
